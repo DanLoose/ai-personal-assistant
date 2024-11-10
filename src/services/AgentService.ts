@@ -19,7 +19,7 @@ export class AgentService {
 
             let messages: Message[] = [
                 { role: 'system', content: this.getSystemPrompt(toolsDescription, 1) },
-                { role: 'user', content: `Question: ${data.userInput}\nQuestionDate: ${new Date()}` },
+                { role: 'user', content: `Question: ${data.userInput}\nQuestionDate: ${new Date().toLocaleString()}` },
             ];
 
             let assistantResponse = '';

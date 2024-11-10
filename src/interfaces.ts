@@ -10,9 +10,18 @@ export interface Reminder {
     date: Date;
 }
 
+export interface Expense {
+    id: number;
+    amount: number;
+    description: string | null;
+    date: Date;
+    category: string;
+}
+
 export interface Tool {
     name: string;
     description: string;
+    input: string;
     execute: (input: any) => Promise<any>;
 }
 

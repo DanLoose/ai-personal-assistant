@@ -1,18 +1,17 @@
 import { Tool } from '@/interfaces'
-import { createReminderTool } from '@/tools/reminders/createReminderTool';
-import { getRemindersTool } from '@/tools/reminders/getRemindersTool';
-import { updateReminderTool } from '@/tools/reminders/updateReminderTool';
-import { deleteRemindersTool } from '@/tools/reminders/deleteRemindersTool';
+
+import reminderTools from '@/tools/reminderTools'
+import expensesTools from '@/tools/expensesTools';
 
 export class AgentToolsService {
     private tools: Map<string, Tool>;
 
     constructor() {
         this.tools = new Map();
-        this.registerTool(createReminderTool);
-        this.registerTool(getRemindersTool);
-        this.registerTool(deleteRemindersTool);
-        this.registerTool(updateReminderTool);
+        const allTools = [...reminderTools, ...expensesTools];
+        for (const tool of allTools) {
+            this.registerTool(tool);
+        }
     }
 
     registerTool(tool: Tool) {
@@ -22,7 +21,7 @@ export class AgentToolsService {
     getToolsDescription() {
         let descriptions = '';
         for (const tool of this.tools.values()) {
-            descriptions += `- ${tool.name}: ${tool.description}\n`;
+            descriptions += `- ${tool.name}: ${tool.description}\nToolInput: ${tool.input}\n\n`;
         }
         return descriptions;
     }
