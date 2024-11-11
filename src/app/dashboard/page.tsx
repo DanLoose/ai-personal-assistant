@@ -14,10 +14,10 @@ export default async function Dashboard() {
                         <thead>
                             <tr>
                                 <th></th>
-                                <td>Descrição</td>
-                                <td>Categoria</td>
-                                <td>Valor</td>
-                                <td>Data</td>
+                                <th>Descrição</th>
+                                <th>Categoria</th>
+                                <th>Valor</th>
+                                <th>Data</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -36,10 +36,10 @@ export default async function Dashboard() {
                         <tfoot>
                             <tr>
                                 <th></th>
-                                <td>Descrição</td>
-                                <td>Categoria</td>
-                                <td>Valor</td>
-                                <td>Data</td>
+                                <th>Descrição</th>
+                                <th>Categoria</th>
+                                <th>Valor</th>
+                                <th>Data</th>
                                 <th></th>
                             </tr>
                         </tfoot>
@@ -55,9 +55,9 @@ export default async function Dashboard() {
                         <thead>
                             <tr>
                                 <th></th>
-                                <td>Titulo</td>
-                                <td>Descrição</td>
-                                <td>Data</td>
+                                <th>Titulo</th>
+                                <th>Descrição</th>
+                                <th>Data</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -75,9 +75,9 @@ export default async function Dashboard() {
                         <tfoot>
                             <tr>
                                 <th></th>
-                                <td>Titulo</td>
-                                <td>Descrição</td>
-                                <td>Data</td>
+                                <th>Titulo</th>
+                                <th>Descrição</th>
+                                <th>Data</th>
                                 <th></th>
                             </tr>
                         </tfoot>
