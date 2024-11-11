@@ -8,6 +8,7 @@ export default async function Dashboard() {
         <div className="p-4">
             <div className="m-4">
                 <h1>Dashboard</h1>
+                <button className="btn btn-neutral">Adicionar</button>
                 <div className="overflow-x-auto rounded-box">
                     <table className="table table-xs table-pin-rows table-pin-cols p-4 rounded-lg">
                         <thead>
@@ -48,6 +49,7 @@ export default async function Dashboard() {
 
             <div className="m-4">
                 <h1>Lembretes</h1>
+                <button className="btn btn-neutral">Adicionar</button>
                 <div className="overflow-x-auto rounded-box">
                     <table className="table table-xs table-pin-rows table-pin-cols p-4">
                         <thead>
