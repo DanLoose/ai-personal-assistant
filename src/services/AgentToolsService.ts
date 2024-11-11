@@ -14,7 +14,7 @@ export class AgentToolsService {
         }
     }
 
-    registerTool(tool: Tool) {
+    private registerTool(tool: Tool) {
         this.tools.set(tool.name, tool);
     }
 
